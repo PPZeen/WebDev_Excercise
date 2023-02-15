@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1>">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body style="overflow-x: hidden;">
+        <style>
+            @media only screen and (min-width: 1200px) {
+                .Home a {
+                    text-align: center;
+                    font-family: 'Segoe UI';
+                    font-size: 15px;
+                }
+                .continue {
+                        color: #2997ff;
+                        font-size: 20px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                }
+                .continue:link {text-decoration: none; color: #2997ff;} 
+                .continue:visited {text-decoration: none; color: #2997ff;}
+                .continue:hover {text-decoration: underline; color: #2997ff;}
+                .continue:active {text-decoration: underline; color: #2997ff;}
+
+                .Page1 h1{
+                    background: -webkit-linear-gradient(#ffb6ff,#b344ff);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 4.5em;
+                    font-family:'Segoe UI';
+                    padding-bottom: 1%;
+                    letter-spacing: 1px;
+                    margin-bottom: 2%;
+                }
+                .Page1 h3 {
+                    padding-top: 1%;
+                    color: white;
+                    font-size: 1.75em;
+                    font-family: Arial, Helvetica, sans-serif
+
+                }
+                .Page1 h4 {
+                    color: rgb(137, 137, 137);
+                    font-size: 1dvi;
+                    font-family:'Segoe UI';
+                    margin-top: 8%;
+                }
+
+                .Page2 h1 {
+                    background: -webkit-linear-gradient(360deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 4.5em;
+                    font-family:'Segoe UI';
+                    padding-bottom: 1%;
+                    letter-spacing: 1px;
+                    margin-bottom: 2%;
+                }
+                .Page2 h3 {
+                    padding-top: 1%;
+                    color: rgb(57, 57, 57);
+                    font-size: 1.75em;
+                    font-family: Arial, Helvetica, sans-serif
+                }
+                .Page2 h4 {
+                    color: rgb(137, 137, 137);
+                    font-size: 1dvi;
+                    font-family:'Segoe UI';
+                    margin-top: 8%;
+                }
+
+                .Page3 {
+                    text-align: center;
+                }
+                .Page3 h1 {
+                    background: -webkit-linear-gradient(360deg, #1e3791 0%,#2948b1 40%,#3153c6 55%,#385fda 60%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 4em;
+                    font-family:'Segoe UI';
+                    padding-bottom: 0.5%;
+                }
+                .Page3 h3 {
+                    color: rgb(31, 31, 31);
+                    font-size: 1.5em;
+                    font-family:'Segoe UI';
+                }
+                .Page3 h4 {
+                    padding-top: 5%;
+                    padding-bottom: 2%;
+                    color: rgb(83, 83, 83);
+                    font-size: 1.5em;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                .Page4 {
+                    align-self: center;
+                    text-align: center;
+                    font-family: 'Segoe UI'
+                }
+                .Page4 .items {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    padding-left: 12%;
+                    padding-right: 12%;
+                }
+                .Page4 h1 {
+                    font-size: 3em;
+                    text-align: center;
+                    margin-top: 2.2%;
+                    margin-bottom: 2.2%;
+                }
+                .Page4 h2 {
+                    font-size: 20px;
+                }
+                .Page4 h3 {
+                    color: #393939;;
+                    font-size: 17px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .Page4 h4 {
+                    color: #4a4a4a;;
+                    font-size: 14px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 12%;
+                }
+                .Page4 h5 {
+                    color: #bf4800;
+                    margin-top: 5px;
+                    font-size: 12px;
+                }
+                .Page4 p {
+                    margin-top: 4%;
+                    color: rgb(212, 212, 212);
+                }
+
+                .Page5 {
+                    margin-top: -1%;
+                }
+                .Page5 h1 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 5em;
+                    color: #ec3127;
+                }
+                .Page5 h2 {
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 2em;
+                    color: #ec3127;
+                }
+                .Page5 .ac {
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .Page6 {
+                    text-align: center;
+                }
+                .Page6 h1{
+                    font-size: 3em;
+                }
+
+                .Page6 h2 {
+                    color: #535353;
+                    font-size: 1.4em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 5%;
+                    margin-bottom: 5%;      
+                }
+
+                .Page7 {
+                    text-align: center;
+                }
+                .Page7 h1 {
+                    position: absolute;
+                    top: 32%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 3em;
+                }
+                .Page7 h2 {
+                    position: absolute;
+                    top: 64%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 1.4em;
+                    color: #535353;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .Page7 .ac {
+                    position: absolute;
+                    top: 86%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .Page8 {
+                    text-align: center;
+                }
+                .Page8 h1{
+                    color: #1d1d1f;
+                    text-align: center;
+                    font-size: 3.2em;
+                    font-family: 'Segoe UI';
+                    margin-top: 4%;
+                    margin-bottom: 3%;
+                }
+                .Page8 h2{
+                    font-size: 3em;
+                }
+
+                .Page8 h3 {
+                    color: #535353;
+                    font-size: 1.4em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 5%;
+                    margin-bottom: 5%;      
+                }
+
+                .Page9 {
+                    text-align: center;
+                }
+                .Page9 h1 {
+                    font-size: 3em;
+                }
+                .Page9 h2 {
+                    color: #535353;
+                    font-size: 1.4em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 5%;
+                    margin-bottom: 5%;      
+                }
+
+                .End p{
+                    margin-top: 1%;
+                    color: #7d7d7d;
+                    font-size: 8px;
+                }
+            }
+
+            @media only screen and (max-width: 1200px) {
+                .Home a {
+                    text-align: center;
+                    font-family: 'Segoe UI';
+                    font-size: 12px;
+                }
+                .continue {
+                        color: #2997ff;
+                        font-size: 15px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                }
+                .continue:link {text-decoration: none; color: #2997ff;} 
+                .continue:visited {text-decoration: none; color: #2997ff;}
+                .continue:hover {text-decoration: underline; color: #2997ff;}
+                .continue:active {text-decoration: underline; color: #2997ff;}
+
+                .Page1 h1{
+                    background: -webkit-linear-gradient(#ffb6ff,#b344ff);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 3.5em;
+                    font-family:'Segoe UI';
+                    padding-bottom: 1%;
+                    letter-spacing: 1px;
+                    margin-bottom: 2%;
+                }
+                .Page1 h3 {
+                    padding-top: 1%;
+                    color: white;
+                    font-size: 1.4em;
+                    font-family: Arial, Helvetica, sans-serif
+
+                }
+                .Page1 h4 {
+                    color: rgb(137, 137, 137);
+                    font-size: 0.8dvi;
+                    font-family:'Segoe UI';
+                    margin-top: 8%;
+                }
+
+                .Page2 h1 {
+                    background: -webkit-linear-gradient(360deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 3.5em;
+                    font-family:'Segoe UI';
+                    padding-bottom: 1%;
+                    letter-spacing: 1px;
+                    margin-bottom: 2%;
+                }
+                .Page2 h3 {
+                    padding-top: 1%;
+                    color: rgb(57, 57, 57);
+                    font-size: 1.4em;
+                    font-family: Arial, Helvetica, sans-serif
+                }
+                .Page2 h4 {
+                    color: rgb(137, 137, 137);
+                    font-size: 0.8dvi;
+                    font-family:'Segoe UI';
+                    margin-top: 8%;
+                }
+
+                .Page3 {
+                    text-align: center;
+                }
+                .Page3 h1 {
+                    background: -webkit-linear-gradient(360deg, #1e3791 0%,#2948b1 40%,#3153c6 55%,#385fda 60%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 3em;
+                    font-family:'Segoe UI';
+                    padding-bottom: 0.5%;
+                }
+                .Page3 h3 {
+                    color: rgb(31, 31, 31);
+                    font-size: 1.2em;
+                    font-family:'Segoe UI';
+                }
+                .Page3 h4 {
+                    padding-top: 5%;
+                    padding-bottom: 2%;
+                    color: rgb(83, 83, 83);
+                    font-size: 1.2em;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .Page3 img {
+                    width: 75%;
+                }
+
+                .Page4 {
+                    text-align: center;
+                    font-family: 'Segoe UI'
+                }
+                .Page4 .items {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    padding-left: 8%;
+                    padding-right: 8%;
+                }
+                .Page4 h1 {
+                    font-size: 2.2em;
+                    text-align: center;
+                    margin-top: 2.2%;
+                    margin-bottom: 2.2%;
+                }
+                .Page4 h2 {
+                    font-size: 16px;
+                }
+                .Page4 h3 {
+                    color: #393939;;
+                    font-size: 13px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .Page4 h4 {
+                    color: #4a4a4a;;
+                    font-size: 11px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 12%;
+                }
+                .Page4 h5 {
+                    color: #bf4800;
+                    margin-top: 5px;
+                    font-size: 8px;
+                }
+                .Page4 p {
+                    margin-top: 4%;
+                    color: rgb(212, 212, 212);
+                }
+
+                .Page5 {
+                    margin-top: -1%;
+                }
+                .Page5 h1 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 4em;
+                    color: #ec3127;
+                }
+                .Page5 h2 {
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 1.6em;
+                    color: #ec3127;
+                }
+                .Page5 .ac {
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .Page6 {
+                    text-align: center;
+                }
+                .Page6 h1{
+                    font-size: 2.2em;
+                }
+
+                .Page6 h2 {
+                    color: #535353;
+                    font-size: 1.1em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 5%;
+                    margin-bottom: 5%;      
+                }
+                .Page6 img {
+                    width: 75%;
+                }
+
+                .Page7 {
+                    text-align: center;
+                }
+                .Page7 h1 {
+                    position: absolute;
+                    top: 32%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 2.2em;
+                }
+                .Page7 h2 {
+                    position: absolute;
+                    top: 64%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 1.1em;
+                    color: #535353;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .Page7 .ac {
+                    position: absolute;
+                    top: 86%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .Page8 {
+                    text-align: center;
+                }
+                .Page8 h1{
+                    color: #1d1d1f;
+                    text-align: center;
+                    font-size: 2.8em;
+                    font-family: 'Segoe UI';
+                    margin-top: 4%;
+                    margin-bottom: 3%;
+                }
+                .Page8 h2{
+                    font-size: 2.2em;
+                }
+
+                .Page8 h3 {
+                    color: #535353;
+                    font-size: 1.1em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 5%;
+                    margin-bottom: 5%;      
+                }
+                .Page8 img {
+                    width: 75%;
+                }
+
+                .Page9 {
+                    text-align: center;
+                }
+                .Page9 h1 {
+                    font-size: 2.2em;
+                }
+                .Page9 h2 {
+                    color: #535353;
+                    font-size: 1.1em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 5%;
+                    margin-bottom: 5%;      
+                }
+                .Page9 img {
+                    width: 75%;
+                }
+
+                .End p{
+                    margin-top: 1%;
+                    color: #7d7d7d;
+                    font-size: 8px;
+                }
+            }
+            
+            @media only screen and (max-width: 770px) {
+                .Home a {
+                    text-align: center;
+                    font-family: 'Segoe UI';
+                    font-size: 8px;
+                }
+                .continue {
+                        color: #2997ff;
+                        font-size: 5px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                }
+                .continue:link {text-decoration: none; color: #2997ff;} 
+                .continue:visited {text-decoration: none; color: #2997ff;}
+                .continue:hover {text-decoration: underline; color: #2997ff;}
+                .continue:active {text-decoration: underline; color: #2997ff;}
+
+                .Page1 h1{
+                    background: -webkit-linear-gradient(#ffb6ff,#b344ff);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 2.2em;
+                    font-family:'Segoe UI';
+                    padding-bottom: 1%;
+                    letter-spacing: 1px;
+                    margin-bottom: 2%;
+                }
+                .Page1 h3 {
+                    padding-top: 1%;
+                    color: white;
+                    font-size: 0.8em;
+                    font-family: Arial, Helvetica, sans-serif
+
+                }
+                .Page1 h4 {
+                    color: rgb(137, 137, 137);
+                    font-size: 0.5dvi;
+                    font-family:'Segoe UI';
+                    margin-top: 8%;
+                }
+
+                .Page2 h1 {
+                    background: -webkit-linear-gradient(360deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 2.2em;
+                    font-family:'Segoe UI';
+                    padding-bottom: 1%;
+                    letter-spacing: 1px;
+                    margin-bottom: 2%;
+                }
+                .Page2 h3 {
+                    padding-top: 1%;
+                    color: rgb(57, 57, 57);
+                    font-size: 0.8em;
+                    font-family: Arial, Helvetica, sans-serif
+                }
+                .Page2 h4 {
+                    color: rgb(137, 137, 137);
+                    font-size: 0.5dvi;
+                    font-family:'Segoe UI';
+                    margin-top: 8%;
+                }
+
+                .Page3 {
+                    text-align: center;
+                }
+                .Page3 h1 {
+                    background: -webkit-linear-gradient(360deg, #1e3791 0%,#2948b1 40%,#3153c6 55%,#385fda 60%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: 2em;
+                    font-family:'Segoe UI';
+                    padding-bottom: 0.5%;
+                }
+                .Page3 h3 {
+                    color: rgb(31, 31, 31);
+                    font-size: 0.75em;
+                    font-family:'Segoe UI';
+                }
+                .Page3 h4 {
+                    padding-top: 5%;
+                    padding-bottom: 2%;
+                    color: rgb(83, 83, 83);
+                    font-size: 0.75em;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .Page3 img{
+                    width: 50%;
+                }
+
+                .Page4 {
+                    text-align: center;
+                    font-family: 'Segoe UI'
+                }
+                .Page4 .items {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    padding-left: 6%;
+                    padding-right: 6%;
+                }
+                .Page4 h1 {
+                    font-size: 1.5em;
+                    text-align: center;
+                    margin-top: 2.2%;
+                    margin-bottom: 2.2%;
+                }
+                .Page4 h2 {
+                    font-size: 10px;
+                }
+                .Page4 h3 {
+                    color: #393939;;
+                    font-size: 8px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .Page4 h4 {
+                    color: #4a4a4a;;
+                    font-size: 7px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 12%;
+                }
+                .Page4 h5 {
+                    color: #bf4800;
+                    margin-top: 5px;
+                    font-size: 6px;
+                }
+                .Page4 p {
+                    margin-top: 4%;
+                    color: rgb(212, 212, 212);
+                }
+                .Page4 img {
+                    scale: 0.8;
+                }
+
+                .Page5 {
+                    margin-top: -1%;
+                }
+                .Page5 h1 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 2.5em;
+                    color: #ec3127;
+                }
+                .Page5 h2 {
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 1em;
+                    color: #ec3127;
+                }
+                .Page5 .ac {
+                    position: absolute;
+                    top: 70%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .Page5 img {
+                    width: 50%;
+                }
+
+                .Page6 {
+                    text-align: center;
+                }
+                .Page6 h1{
+                    font-size: 1em;
+                }
+
+                .Page6 h2 {
+                    color: #535353;
+                    font-size: 0.4em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 5%;
+                    margin-bottom: 5%;      
+                }
+                .Page6 img {
+                    width: 50%;
+                }
+
+                .Page7 {
+                    text-align: center;
+                }
+                .Page7 h1 {
+                    position: absolute;
+                    top: 32%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 1em;
+                }
+                .Page7 h2 {
+                    position: absolute;
+                    top: 64%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-size: 0.2em;
+                    color: #535353;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                .Page7 .ac {
+                    position: absolute;
+                    top: 86%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                .Page7 img {
+                    width: 50%;
+                }
+
+                .Page8 {
+                    text-align: center;
+                }
+                .Page8 h1{
+                    color: #1d1d1f;
+                    text-align: center;
+                    font-size: 1.4em;
+                    font-family: 'Segoe UI';
+                    margin-top: 4%;
+                    margin-bottom: 1%;
+                }
+                .Page8 h2{
+                    font-size: 1em;
+                }
+
+                .Page8 h3 {
+                    color: #535353;
+                    font-size: 0.5em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 5%;
+                    margin-bottom: 5%;      
+                }
+                .Page8 img {
+                    width: 60%;
+                }
+
+                .Page9 {
+                    text-align: center;
+                }
+                .Page9 h1 {
+                    font-size: 1.2em;
+                }
+                .Page9 h2 {
+                    color: #535353;
+                    font-size: 0.5em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin-top: 5%;
+                    margin-bottom: 5%;      
+                }
+                .Page9 img {
+                    width: 100%;
+                }
+
+                .End {
+                    margin-top: 1%;
+                    color: #7d7d7d;
+                    font-size: 4px;
+                }
+            }
+        </style>
+        <main style="background-color: rgb(240, 240, 240);">
+
+            <div id="home" class="Home">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-expand-sm bg-light justify-content-center navbar-expand">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#home"><i class="material-icons">home</i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page1">Page1</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page2">Page2</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page3">Page3</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page4">Page4</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page5">Page5</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page6">Page6</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page7">Page7</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page8">Page8</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page9">Page9</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page1" class="Page1 bg-black">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8" style="text-align: center;">
+                        <h4>New</h4>
+                        <h3>Mockup</h3>
+                        <h1>iMacgazine</h1>
+                        <div><a class="continue" href="#home">< Home</a>&emsp;&ensp;<a class="continue" href="#page2">Continue ></a></div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8" style="overflow: hidden; max-height: 80%;">
+                        <img src="https://www.apple.com/v/iphone/home/bk/images/overview/hero/iphone_14_pro_hero__e4ivycyx40k2_large.jpg" class="mx-auto d-block mt-5" style="width: 70%;">
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+
+            <div id="page2" class="Page2 bg-white">
+                <div class="row mt-3" style="justify-self: center;">
+                    <div class="col" style="text-align: center;">
+                        <h4>New</h4>
+                        <h3>Mockup</h3>
+                        <h1>Contentkeyword</h1>
+                        <div><a class="continue" href="#home">< Home</a>&emsp;&ensp;<a class="continue" href="#page3">Continue ></a></div>
+                    </div>
+                </div>
+                <div class="row" style="justify-self: center;">
+                    <div class="col" style=" overflow: hidden; max-height: 80%;">
+                        <img src="https://www.apple.com/th/iphone/home/images/overview/hero/iphone_14_hero__ceub5xriecgi_large.jpg" class="mx-auto d-block mt-5" style="width: 55%;">
+                    </div>
+                </div>
+            </div>
+
+            <div id="page3" class="Page3">
+                <div class="row mt-3 mx-auto" style="background-color: rgb(251,251,253);">
+                    <div class="col mx-auto" style="align-self: center;">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Lorem</h3>
+                                <h1>Content</h1>
+                                <h1>iMacgazine</h1>
+                                <h4>mockup</h4>
+                                <div><a class="continue" href="#home">< Home</a>&emsp;&ensp;<a class="continue" href="#page4">Continue ></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="https://www.apple.com/v/iphone/home/bk/images/overview/hero/iphone_se_hero__gd586pazxqqa_large.jpg" class="m-auto mb-0">
+                    </div>
+                </div>
+            </div>
+
+            <div id="page4" class="Page4 bg-white p-2">
+                <div class="row">
+                    <div class="col">
+                        <h1>iMagazine Mockup Content</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="items">
+                        <div class="col bg-white p-2" >
+                            <img src="https://www.apple.com/v/iphone/home/bk/images/overview/compare/compare_iphone_14_pro__cjmfbiggqhpy_large.jpg" class="mx-auto d-block">
+                            <img src="https://www.apple.com/v/iphone/home/bk/images/overview/compare/swatch_iphone_14_pro__c2bl98e0li4i_medium.png" class="mx-auto d-block pt-4 pb-1">
+                            <h5>new</h5>
+                            <h2>ipsum 14 Pro</h2>
+                            <h3>Donec placerat lorem</h3>
+                            <h4>started ฿41,900</h4>
+                            <p>________________________________</p>
+                            <h4>Donec nec lacinia tortor<br>Suspendisse potenti.<br><br>Duis gravida volutpat viverra.</h4>
+
+                        </div>
+                        <div class="col bg-white p-2">
+                            <img src="https://www.apple.com/v/iphone/home/bk/images/overview/compare/compare_iphone_14__ct4sjk962pea_large.jpg" class="mx-auto d-block" >
+                            <img src="https://www.apple.com/v/iphone/home/bk/images/overview/compare/swatch_iphone_14__eatap63qk6wm_medium.png" class="mx-auto d-block pt-4 pb-1" >
+                            <h5>new</h5>
+                            <h2>ipsum 14</h2>
+                            <h3>Pellentesque in pharetra</h3>
+                            <h4>started ฿32,900</h4>
+                            <p>_______________________________</p>
+                            <h4>Integer feugiat tortor neque<br>Cras sit amet arcu mi.<br><br>Duis gravida volutpat viverra.</h4>
+                        
+                        </div>
+                        <div class="col bg-white p-2">
+                            <img src="https://www.apple.com/v/iphone/home/bk/images/overview/compare/compare_iphone_13__fqzwhmfmroey_large.jpg" class="mx-auto d-block">
+                            <img src="https://www.apple.com/v/iphone/home/bk/images/overview/compare/swatch_iphone_13__cr1wl9d1b5aq_medium.png" class="mx-auto d-block pt-4 pb-1">
+                            <h5>new</h5>
+                            <h2>ipsum 13</h2>
+                            <h3>Mauris eget nulla</h3>
+                            <h4>started ฿24,900</h4>
+                            <p>_______________________________</p>
+                            <h4>Praesent quis hendrerit massa<br>lorem mauris tempor diam.<br><br>Duis gravida volutpat viverra.</h4>
+
+                        </div>
+                        <div class="col bg-white p-2">
+                            <img src="https://www.apple.com/v/iphone/home/bk/images/overview/compare/compare_iphone_se__d5blqx1pgymq_large.jpg" class="mx-auto d-block" >
+                            <img src="https://www.apple.com/v/iphone/home/bk/images/overview/compare/swatch_iphone_se__bygc73yqw22u_medium.png" class="mx-auto d-block pt-4 pb-1">
+                            <h5>new</h5>
+                            <h2>ipsum SE</h2>
+                            <h3>Quisque sed tempor</h3>
+                            <h4>started ฿17,900</h4>
+                            <p>_______________________________</p>
+                            <h4>Nullam euismod sodales dictum<br>id imperdiet elit.<br><br>Duis gravida volutpat viverra.</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-1" style="text-align: center;">
+                    <div class="col"></div><div class="col"></div>
+                    <div class="col"><a class="continue" href="#home" style="color: #06c;">< Home</a></div>
+                    <div class="col"><a class="continue" href="#page5" style="color: #06c;">Continue ></a></div>
+                    <div class="col"></div><div class="col"></div>
+                </div>
+            </div>
+
+            <div id="page5" class="Page5">
+                <div class="row">
+                    <div class="col position-relative">
+                        <img 
+                            src="https://www.apple.com/th/iphone/home/images/overview/vday-2023/val23_iphone_familypage__io3oi0npl8yi_large.jpg"
+                            class="mx-auto d-block mt-5"
+                            style="width: 90%; position: relative;">
+                        <h2>Valentine</h2>
+                        <h1>iMagazine</h1>
+                        <div class="ac"><a class="continue text-black" href="#home">< Home</a>&emsp;&ensp;<a class="continue text-black" href="#page6">Continue ></a></div>
+                    </div>
+                </div>
+            </div> 
+
+            <div id="page6" class="Page6">
+                <div class="row bg-white mt-4 mx-auto" style="width: 90%;">
+                    <div class="col mx-auto" style="align-self: center;">
+                        <div class="row">
+                            <div class="col">
+                                <h1>iMagazine mockup<br>Lorem ipsum</h1>
+                                <h2>Many desktop publishing packages and<br>web page editors now use Lorem Ipsum<br>as their default model text, and a search<br>for 'lorem ipsum' will uncover many web<br>sites still in their infancy.</h2>
+                                <div><a class="continue" href="#home">< Home</a>&emsp;&ensp;<a class="continue" href="#page7">Continue ></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="margin-top: 10%;">
+                        <img src="https://www.apple.com/th/iphone/home/images/overview/retail/trade_in__djk6i9425m4i_large.jpg" class="m-auto mb-0" >
+                    </div>
+                </div>
+            </div>
+
+            <div id="page7" class="Page7">
+                <div class="row">
+                    <div class="col position-relative">
+                        <img 
+                            src="https://www.apple.com/v/iphone/home/bk/images/overview/retail/why_apple__ezn1ktvka6oi_large.jpg"
+                            class="mx-auto d-block mt-4"
+                            style="width: 90%; position: relative;">
+                            <h1>Awesome<br>Design iMagazine</h1>
+                            <h2>Lorem Ipsum has been the industry's<br>standard dummy text ever since the<br>1500s, when an unknown printer took a<br>galley of type and scrambled it to make a<br>type specimen book.</h2>
+                            <div class="ac"><a class="continue" href="#home" style="color: #06c;">< Home</a>&emsp;&ensp;<a class="continue" href="#page8" style="color: #06c;">Continue ></a></div>
+                    </div>
+                </div>
+            </div> 
+
+            <div id="page8" class="Page8">
+                <div class="row">
+                    <div class="col">
+                        <h1>Recommend iMagazine</h1>
+                    </div>
+                </div>
+                <div class="row bg-white mt-4 mx-auto" style="width: 90%;">
+                    <div class="col mx-auto" style="align-self: center;">
+                        <div class="row">
+                            <div class="col">
+                                <h2>iMockup</h2>
+                                <h3>Donec commodo ultrices arcu a<br>feugiat. Suspendisse sem tellus,<br>bibendum at sapien vel, tristique<br>luctus nisi.</h3>
+                                <div class="ac"><a class="continue" href="#home" style="color: #06c;">< Home</a>&emsp;&ensp;<a class="continue" href="#page9" style="color: #06c;">Continue ></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" style="margin-top: 10%;">
+                        <img src="https://www.apple.com/v/iphone/home/bk/images/overview/accessories/magsafe__bfji5hb1mqsy_large.jpg" class="m-auto mb-0" >
+                    </div>
+                </div>
+            </div>
+
+            <div id="page9" class="Page9">
+                <div class="row bg-white mt-4 mx-auto" style="width: 90%;">
+                    <div class="col-6">
+                        <img src="https://www.apple.com/v/iphone/home/bk/images/overview/accessories/airtag__b5lt0bcbd9ua_large.jpg" class="m-auto mb-0" >
+                    </div>
+                    <div class="col-6 mx-auto" style="align-self: center;">
+                        <div class="row">
+                            <div class="col">
+                                <h1>Mockup</h1>
+                                <h2>Fusce malesuada ligula sed est<br>tincidunt interdum. Phasellus vitae<br>ipsum risus. Nullam non est<br>pretium, volutpat tortor non,<br>vestibulum diam.</h2>
+                                <div class="ac"><a class="continue" href="#home" style="color: #06c;">< Home</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="End">
+                <div class="container p-xxl-4 mx-auto overflow-hidden" id="end">
+                    <p>Maecenas luctus diam id faucibus volutpat. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat malesuada varius. Fusce malesuada ligula sed est tincidunt interdum. Cras in mi a risus varius tempor. Mauris ut ante hendrerit augue rhoncus feugiat in posuere sapien. Integer aliquet luctus scelerisque. Duis iaculis sapien eu interdum laoreet. Praesent quis hendrerit massa. In porttitor tempus leo vitae vestibulum. Curabitur non tellus sapien. Cras vestibulum, metus eu tempus luctus, dui felis posuere dolor, nec fermentum sem ex eu eros. Ut eleifend, mauris eget ullamcorper lobortis, lectus purus sagittis mauris, eu laoreet justo nisl eu velit.</p>
+                    <p>________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
